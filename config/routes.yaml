@@ -1,0 +1,4 @@
+Site/Chat:
+    path:      /chat
+    controller: FrankProjects\Chat\Controller\ChatController::chat
+

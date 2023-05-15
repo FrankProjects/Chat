@@ -7,7 +7,7 @@
         "php": "^8.1",
         "cboden/ratchet": "^0.4",
         "symfony/console": "^6.2",
-        "symfony/monolog-bundle": "^3.8",
+        "symfony/monolog-bundle": "^3.8"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
@@ -15,46 +15,9 @@
         "squizlabs/php_codesniffer": "^3.7",
         "symfony/phpunit-bridge": "^6.2"
     },
-    "config": {
-        "preferred-install": {
-            "*": "dist"
-        },
-        "sort-packages": true,
-        "allow-plugins": {
-            "symfony/runtime": true
-        }
-    },
     "autoload": {
         "psr-4": {
             "FrankProjects\\Chat\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "FrankProjects\\Chat\\Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "auto-scripts": {
-            "cache:clear": "symfony-cmd",
-            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
-        },
-        "post-install-cmd": [
-            "@auto-scripts"
-        ],
-        "post-update-cmd": [
-            "@auto-scripts"
-        ]
-    },
-    "conflict": {
-        "symfony/symfony": "*"
-    },
-    "extra": {
-        "symfony": {
-            "id": "01C0SF16B9AEFHYZFFXCZJK7ZN",
-            "allow-contrib": false,
-            "require": "6.2.*"
         }
     }
 }
